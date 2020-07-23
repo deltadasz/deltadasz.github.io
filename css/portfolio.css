@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin-top: 10px;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+   
+}
+
+.container {
+    
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: inline;
+    
+}
+
+.navbar-links li a {
+    font-family: 'Italiana', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+   
+}
+
+.navbar-links a:hover {
+    color: #DC5A0C;
+}
+
+.navbar-links ul {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 40px;
+   
+}
+.navbar-links .current {
+    color: #DC5A0C;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 800px) {
+    #logo {
+        width: 50%;
+        height: 50%;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+    .container {
+        flex-direction: column
+    }
+    .navbar-links ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    
+}
+
+#header h1 {
+    font-family: 'Italiana', serif;
+}
+
+#header hr {
+    border-top: 1.5px solid grey;
+}
+
+
+
+#galerie {
+    padding-top: 2rem;
+}
+
+
+
+#footer {
+    position: relative;
+    height: 50px;
+    background-color: grey;
+}
+
+.container-fluid  {
+    text-align: center;
+    
+}
+
+.socials ul{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+.socials li {
+       text-align: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+}
+
+.socials a {
+    color: darkgrey;
+    margin-right: 50px;
+}
+
+.socials a:hover {
+    color: #DC5A0C;
+}
