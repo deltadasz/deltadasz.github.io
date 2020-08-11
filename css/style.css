@@ -74,6 +74,17 @@ body {
     background-color: black;
     border-radius: 10px;
 }
+.toggle #bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle #bar2 {
+    opacity: 0;
+}
+
+.toggle #bar3 {
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+
 
 
 @media (max-width: 800px) {
